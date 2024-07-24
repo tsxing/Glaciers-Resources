@@ -20,9 +20,10 @@
     <a href="#temp_from_ice_cores">Telling Temperature from Ice Cores</a><br>
     <a href="#temp_from_ice_cores">Telling Atmospheric Composition from Ice Cores</a><br>
     <a href="#milank">Milankovitch Cycles</a> <Br>
-    <a href="milank_eccentricity">Milankovitch Cycles - Eccentricity</a><br>
-    <a href="milank_obliquity">Milankovitch Cycles - Obliquity</a><br>
-    <a href="milank_precession">Milankovitch Cycles - Precession</a><br>
+    <a href="#milank_eccentricity">Milankovitch Cycles - Eccentricity</a><br>
+    <a href="#milank_obliquity">Milankovitch Cycles - Obliquity</a><br>
+    <a href="#milank_precession">Milankovitch Cycles - Precession</a><br>
+    <a href="#methods_of_studying_glaciers">Methods of studying glaciers</a> <br>
   </div>
 
   <h2>Website Links</h2>
@@ -33,9 +34,10 @@
   
   <h2>Content</h2>
   <h3 id="ice_cores">Ice Cores</h3>
-  <p>Simply, ice cores are cylinders of ice drilled from ice sheets and glaciers. Ice cores provide us with information on how temperatures changed over time, past atmospheric composition, volcanic activity, etc.</p>
+  <p>Simply, ice cores are cylinders of ice drilled from ice sheets and glaciers. Ice cores provide us with information on how temperatures changed over time, past atmospheric composition, volcanic activity, etc. Stable isotope composition is the ratio of different isotopes in a sample, compared to the ratios of standard materials. <b>Stable isotopes</b> are isotopes that don't decay into other elements over time, and they don't emit radiation. <br> <br>Glacial ice is made up primarily of water with the light Oxygen-16 (16O) isotope. This leaves the oceans enriched in the heavier Oxygen-18 (18O). During glacial periods, more 16O is trapped in glacial ice and the oceans are more enriched in 18O.</p>
+  <img height="200px" src="https://pages.uoregon.edu/rdorsey/geo334/O-isotopes.jpg">
   <h4 id="temp_from_ice_cores">Temperature from Ice Cores</h4>
-  <p>Ice formed during warmer periods have higher concentration of the isotope 18O (Oxygen-18) than ice formed during cooler periods. The ratio of Oxygen-18 and Oxygen-16 in the ice core layers tells us about the past climate. <b>δ18O, or delta-O-18,</b> is a measure of the deviation in ratio of stable isotopes oxygen-18 (18O) and oxygen-16 (16O). </p>
+  <p>Ice formed during warmer periods have higher concentration of the isotope 18O (Oxygen-18) than ice formed during cooler periods. The ratio of Oxygen-18 and Oxygen-16 in the ice core layers tells us about the past climate. <b>δ18O, or delta-O-18,</b> is a measure of the deviation in ratio of stable isotopes oxygen-18 (18O) and oxygen-16 (16O). A higher abundance of 18O is indicative of colder water temperatures because the lighter isotopes (like 16O) are all stored in the glacial ice. </p>
   <h4 id="atm_from_ice_core">Atmospheric Composition from Ice Cores</h4>
   <p>As snow accumulates to form glaiers, air is trapped within the ice. Scientists use this air trapped in the ice to measure the past concentration of atmospheric gases. This includes determining the CO2 levels of past climates. </p>
 
@@ -51,7 +53,14 @@
   <p>The direction Earth's axis of rotation is pointed. Think of Earth wobbling like a toy top. This cycle spans around <b>25,771.5 years</b>.</p>
   <img height="200px" src="https://climate.nasa.gov/system/resources/detail_files/251_axial_precession.jpg">
 
-
+  <h3 id="methods_of_studying_glaciers">Methods of studying glaciers</h3>
+  <h4>Altimetry</h4>
+  <p>A remote sensing technique that uses satellites to measure the elevation of glaciers and other ice sheets. Main purpose for altimetry above ice sheets is the surface topography retrieval for monitoring surface height variations.</p>
+  <h4>RADAR</h4>
+  <p>Short for Radio Detection and Ranging. The most common application for radioglaciological observations is measuring ice thickness and bed topography. Echos from the base of the ice sheet can be detected through ice thickness greater than 4 km</p>
+  <h4>Landsat</h4>
+  <p>Short for Land Satellite. The Landsat program consists of a series of Earth-observing satellite missions managed by NASA and USGS. Landsat satellites fly 438 miles above the Earth's surface, orbits once every 99 minutes for 14.5 orbits per day.</p>
+  <img height="150px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSENaqysbp3qVlt1dQ76aZO_I0uQ7CwTUoGA&s">
 </body>
 
 </html>
@@ -73,7 +82,7 @@
   }
   p{
     margin-left: 0;
-    line-height: 2.8vh;
+    line-height: 3vh;
 
   }
   a{
@@ -81,7 +90,8 @@
     color: black;
     box-shadow: 5px 5px 10px rgb(178, 178, 178);
     padding: 5px;
-    transition: 0.8s;
+    transition: 0.3s;
+    border: 1px solid black;
     
   }
   a:hover{
@@ -89,15 +99,20 @@
 
   }
   button{
-    background-color: white;
+    background-color: black;
     border: 1px solid black;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(178, 178, 178);
     padding: 5px;
+    transition: 0.3s;
   
   }
   button:hover{
     cursor: pointer;
-    background-color: black;
-    color: white;
+    transition: 0.3s;
+    background-color: white;
+    box-shadow: none;
+    color: black;
   }
 </style>
 
