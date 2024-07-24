@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Glaciers (Dynamic Planet) Resources</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>Glaciers Resources</h1>
+  <p>This was created for my wonderful ScioCamp Dynamic Planet students to prepare for Science Olympiad's DYP glacier topic. <br><br> - Tina </p>
+
+  <h2>Table of Contents</h2>
+  <button onclick="show_table_contents()">Show/Hide</button>
+  <div id="table_of_contents">
+    <a href="#ice_cores">Ice Cores</a> <Br>
+    <a href="#temp_from_ice_cores">Telling Temperature from Ice Cores</a><br>
+    <a href="#temp_from_ice_cores">Telling Atmospheric Composition from Ice Cores</a><br>
+    <a href="#milank">Milankovitch Cycles</a> <Br>
+    <a href="milank_eccentricity">Milankovitch Cycles - Eccentricity</a><br>
+    <a href="milank_obliquity">Milankovitch Cycles - Obliquity</a><br>
+    <a href="milank_precession">Milankovitch Cycles - Precession</a><br>
+  </div>
+
+  <h2>Website Links</h2>
+
+  <a target="_blank" href="http://home.moravian.edu/users/phys/mejjg01/geology/geology%20pages/geo_map_folder/geo_map_pages/Alluvial%20Fan.htm">Topographic Map Features</a> <p>
+  Helpful for topographic map image ID. Note down the 'important' features such as drumlins, cirques, kettles, roches moutonnees, kames, U shaped valley, tarn, all the moraines, esker, horn, hanging valley, and arete.</p>
+  
+  
+  <h2>Content</h2>
+  <h3 id="ice_cores">Ice Cores</h3>
+  <p>Simply, ice cores are cylinders of ice drilled from ice sheets and glaciers. Ice cores provide us with information on how temperatures changed over time, past atmospheric composition, volcanic activity, etc.</p>
+  <h4 id="temp_from_ice_cores">Temperature from Ice Cores</h4>
+  <p>Ice formed during warmer periods have higher concentration of the isotope 18O (Oxygen-18) than ice formed during cooler periods. The ratio of Oxygen-18 and Oxygen-16 in the ice core layers tells us about the past climate. <b>δ18O, or delta-O-18,</b> is a measure of the deviation in ratio of stable isotopes oxygen-18 (18O) and oxygen-16 (16O). </p>
+  <h4 id="atm_from_ice_core">Atmospheric Composition from Ice Cores</h4>
+  <p>As snow accumulates to form glaiers, air is trapped within the ice. Scientists use this air trapped in the ice to measure the past concentration of atmospheric gases. This includes determining the CO2 levels of past climates. </p>
+
+  <h3 id="milank">Milankovitch Cycles</h3>
+  <p>Milankovitch Cycles describe 3 types of Earth orbital movements that cause variations of up to 25% in the amount of incoming insolation at Earth's mid-latitudes. Milutin Milankovitch hypothesized that changes in Earth's position relative to the Sun are strong drivers of Earth's <i>long-term climate</i>, and are responsible for triggering Ice Ages. These 'cycles' are:</p>
+  <h3 id="milank_eccentricity">Eccentricity</h3>
+  <p>The shape of Earth's orbit. Describes Earth's elliptical, not perfectly circular, orbit. Currently, Earth's eccentricity is slowly decreasing and is approaching its most circular (least elliptic) orbit. This cycle is around <b>100,000 years</b>.</p>
+  <img height="200px"src="https://www.ces.fau.edu/ces/nasa/images/module_3/Eccentricity.gif">
+  <h3 id="milank_obliquity">Obliquity</h3>
+  <p>The angle Earth's axis is tilted with respect to Earth's orbital plane. Earth's tilt angle has varied between 22.1 and 24.5 deg over past million years. Greater Earth axial tilt angle = more extreme seasons. Currently, Earth's axis is tilted at 23.4 degrees. It's about halfway between its extremes. This angle is currently slowly decreasing in a cycle that spans around <b>41,000 years</b>.</p>
+  <img height="120px" src="https://miro.medium.com/v2/resize:fit:1400/0*lAPfuD0w1OmGn7Sh">
+  <h3 id="milank_precession">Precession</h3>
+  <p>The direction Earth's axis of rotation is pointed. Think of Earth wobbling like a toy top. This cycle spans around <b>25,771.5 years</b>.</p>
+  <img height="200px" src="https://climate.nasa.gov/system/resources/detail_files/251_axial_precession.jpg">
+
+
+</body>
+
+</html>
+
+<style>
+  *{
+    box-sizing: border-box;
+    
+    
+    font-family: "Lato", sans-serif;
+  }
+  body{
+    margin: 100px;
+    
+  }
+  #table_of_contents{
+    display: none;
+    line-height: 4.5vh;
+  }
+  p{
+    margin-left: 0;
+    line-height: 2.8vh;
+
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 10px rgb(178, 178, 178);
+    padding: 5px;
+    transition: 0.8s;
+    
+  }
+  a:hover{
+    box-shadow: none;
+
+  }
+  button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+  
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+</style>
+
+<script>
+function show_table_contents() {
+  var x = document.getElementById("table_of_contents");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
